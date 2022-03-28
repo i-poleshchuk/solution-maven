@@ -1,14 +1,15 @@
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.poleshchuk.common.CommonApp;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MockCommonTest {
 
-    CommonApp commonApp = new CommonApp();
+    private final CommonApp commonApp = new CommonApp();
 
     @Test
     public void mockTest() {
-        Long res = 5L;
-        assertEquals(res, commonApp.count);
+        Long actual = 5L;
+        assertEquals(actual, commonApp.count);
     }
 }

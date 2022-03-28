@@ -1,10 +1,11 @@
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.poleshchuk.service.ServiceApp;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MockServiceTest {
 
-    ServiceApp serviceApp = new ServiceApp();
+    private final ServiceApp serviceApp = new ServiceApp();
 
     @Test
     public void mockTest() {

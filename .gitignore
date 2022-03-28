@@ -1,0 +1,8 @@
+.idea
+out
+target
+lib
+*.iml
+*.env
+/tools/
+*.gitignore

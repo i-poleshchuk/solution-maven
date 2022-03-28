@@ -17,16 +17,15 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>15</maven.compiler.source>
         <maven.compiler.target>15</maven.compiler.target>
-        <junit.version>4.13.1</junit.version>
+        <junit.version>5.4.0</junit.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>junit</groupId>
-                <artifactId>junit</artifactId>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-engine</artifactId>
                 <version>${junit.version}</version>
-                <scope>test</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -109,7 +108,7 @@
                             <goals>
                                 <goal>report</goal>
                             </goals>
-                            <phase>prepare-package</phase>
+                            <phase>integration-test</phase>
                         </execution>
                     </executions>
                 </plugin>
